@@ -12,7 +12,7 @@ namespace OpenFile
             {
                 fs = new FileStream(@"C:\Users\DiegoLins\Desktop\FONE.txt", FileMode.Open);
                 StreamReader sr = new StreamReader(fs);
-                string line = sr.ReadLine();
+                string line = sr.ReadToEnd(); //Read Line
                 Console.WriteLine(line);
             }
             catch (FileNotFoundException e)
